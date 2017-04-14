@@ -1,23 +1,38 @@
 /*removes the margin from the body*/
 body {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
 }
+
+.container {
+    display:flex;
+    flex-direction:column;
+}
+
 
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #2C4B5E;
     overflow: hidden;
+    float: left;
+    width: 100%;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
+    height: 1.2em;
     display: block;
     color: #fff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin: 0px;
 }
 
 
@@ -66,7 +81,8 @@ body {
 }
 
 .main {
-    background-color: aqua;
+    flex:1;
+    height: 100%;
 }
 
 
@@ -74,13 +90,29 @@ body {
 #duck {
     content: url(../images/duck.png);
     display: block;
-    margin: 50px auto 200px ;
+    margin: auto;
+    padding: 4em 0 ;
     width: 70%;
     filter: drop-shadow(0.5em 1em 1em #cccccc);
 }
 
 
 footer {
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
+    color: #5E8093;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    padding: 1em;
+    background-color: #2C4B5E;
+}
+
+footer a {
+    font-style: italic;
+    color: #5E8093;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFBF40;
 }
