@@ -1,3 +1,8 @@
+/*removes the margin from the body*/
+body {
+    margin: 0;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #2C4B5E;
@@ -12,7 +17,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.2em;
 }
 
 
@@ -37,7 +42,7 @@
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -46,7 +51,7 @@
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -60,10 +65,22 @@
   }
 }
 
+.main {
+    background-color: aqua;
+}
+
 
 /*styling for duck image*/
 #duck {
     content: url(../images/duck.png);
-    width: 50%;
-    filter: drop-shadow(0.5em 1em 1em #cccccc)
+    display: block;
+    margin: 50px auto 200px ;
+    width: 70%;
+    filter: drop-shadow(0.5em 1em 1em #cccccc);
+}
+
+
+footer {
+    font-size: 0.8em;
+    text-align: center;
 }
