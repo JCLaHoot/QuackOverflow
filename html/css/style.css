@@ -53,14 +53,6 @@ body {
 }
 
 
-/*styling for the twitter icon*/
-#twitter-icon {
-    content: url(../images/twitter-icon-white.png);
-    height: 1em;
-    vertical-align: middle;
-}
-
-
 
 
 @media screen and (max-height: 800px) {
