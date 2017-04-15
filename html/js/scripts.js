@@ -7,3 +7,11 @@ function openNav() {
         x.className = "topnav";
     }
 }
+
+
+//plays audio
+function playAudio(){
+player = document.getElementById('player');
+player.src = '../audio/squeak.wav';
+player.play()
+};

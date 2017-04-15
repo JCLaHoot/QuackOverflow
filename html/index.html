@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Quackoverflow</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,400">
-
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300">
+    <link rel="icon" type="image/png" href="images/duck-favicon.png">
     <script src="js/scripts.js"></script>
 </head>
 <body>
@@ -13,11 +13,11 @@
     <div class="container">
         
         <nav class="topnav" id="myTopnav">
-          <a href="#">Quackoverflow &nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="#" id="title-text">Quackoverflow &nbsp;&nbsp;&nbsp;&nbsp;</a>
           
           <a href="http://www.confusedretriever.com/">Blog</a>
-          <a href="https://twitter.com/jclahoot">
-              <img id="twitter-icon" alt="Twitter icon">
+          <a id="twitter-icon-link" href="https://twitter.com/jclahoot">
+              &nbsp;&nbsp;<img id="twitter-icon" alt="Twitter icon">&nbsp;&nbsp;
           </a>
           
           <a href="javascript:void(0);" class="icon" onclick="openNav()">&#9776;</a>
@@ -26,8 +26,10 @@
         <article class="main">        
            
         
-               <img id="duck" src="http://placehold.it/200x100" alt="rubber duck">
+               <img id="duck" onClick="playAudio()" alt="rubber duck">
         
+              <audio id="player"></audio>
+
                <div class="textbox">
                   
                     <h1>Stuck on a problem? 
