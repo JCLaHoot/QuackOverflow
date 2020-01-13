@@ -1,79 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- Favicons-->
-        <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
-        <meta name="msapplication-TileColor" content="#FFFFFF">
-        <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
-        <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
-        <title>Materialize</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Materialize core CSS -->
-        <link href="materialize/css/materialize.css" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="assets/js/html5shiv.js"></script>
-            <script src="assets/js/respond.min.js"></script>
-        <![endif]-->
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Materialize core JavaScript -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <header>
-            <nav> 
-                <div class="nav-wrapper"> 
-                    <a href="#" class="brand-logo">Quackoverflow</a> 
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down"> 
-                        <li> 
-                            <a href="#">Blog</a>
-                        </li>                         
-                        <li> 
-                            <a href="#">Twitter</a>
-                        </li>                         
-                    </ul>                     
-                    <ul class="side-nav" id="side-nav-145"> 
-                        <li> 
-                            <a href="sass.html">Sass</a>
-                        </li>                         
-                        <li> 
-                            <a href="badges.html">Components</a>
-                        </li>                         
-                        <li> 
-                            <a href="collapsible.html">Javascript</a>
-                        </li>                         
-                        <li> 
-                            <a href="mobile.html">Mobile</a>
-                        </li>                         
-                    </ul>
-                </div>                 
-            </nav>
-        </header>
-        <main>
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m12 l8"> 
-                        <img src="assets/img/duck.png" id="duck" /> 
-                    </div>
-                    <div class="col s12 l4 m12"> 
-                        <h2>Stuck on a problem?</h2> 
-                        <h5>This rubber duck can help!</h5> 
-                    </div>
-                </div>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="icon"
+          type="image/png"
+          href="assets/duck-favicon.png">
+    <link rel="stylesheet" href="./css/style.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">    <title>Quackoverflow</title>
+  </head>
+  <body>
+    <div class="vertical-container">
+        <div class="logo-container">
+            <img id="logo" src="assets/logo.svg">
+            <div class="tagline">
+                <h1>Squeeze for <span class="answers">answers</span></h1>
+                <img class="check" src="assets/check.svg"/>
             </div>
-        </main>
-        <footer class="page-footer"> 
-            <div class="footer-copyright"> 
-                <div class="container">© 2017 Jonathan Lahue</div>                 
-            </div>             
-        </footer>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="materialize/js/materialize.js"></script>
-        <script src="index.js"></script>
-    </body>
+        </div>
+        <div class="duck-container">
+            <img id="duck" src="assets/duck.png">
+        </div>
+        <p class="copyright">© 2020 Jonathan Lahue</p>
+
+        <div class="web-links">
+            <div class="metro-button blog">
+                <p>Blog</p>
+                <div class="circle"></div>
+            </div>
+            <div class="metro-button twitter">
+                <p>Twitter</p>
+                <div class="circle"></div>
+            </div>
+        </div>
+
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
 </html>

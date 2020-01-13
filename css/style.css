@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET OVER */
+
+body {
+	font-family: 'Roboto',sans-serif;
+}
+
+
+
+.vertical-container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+}
+
+.logo-container {
+	width: fit-content;
+}
+
+#logo {
+	margin-top: 0.25em;
+	height: 5em;
+	margin-right: 0.25em;
+
+}
+
+.tagline {
+	margin-top: -0.5em;
+	text-align: right;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 300;
+	font-size: 1.375em;
+
+}
+
+.tagline h1 {
+	display: inline-block;
+}
+
+.answers {
+	font-weight: 700;
+	color: #47A968;
+}
+
+.check {
+	width: 1.25em;
+}
+
+#duck {
+	width: 30em;
+	height: auto;
+	filter: drop-shadow(0.25em 0.25em 0.3em rgba(0,0,0,0.25));
+}
+
+.copyright {
+	font-family: 'Roboto',sans-serif;
+	font-size: 0.875em;
+	color: #C5C5C5;
+	margin-bottom: 0.25em;
+
+}
+
+.web-links {
+	position: fixed;
+	bottom: 2.5em;
+	left: 0;
+}
+
+
+.metro-button {
+	height: 2.75em;
+	width: fit-content;
+    width: -moz-fit-content;
+	text-align: left;
+	display: flex;
+	border-radius: 0 2.75em 2.75em 0;
+	padding: 0.5em;
+	box-shadow: rgba(0,0,0,0.25) 0.125em 0.125em 0.25em;
+    cursor: pointer;
+}
+
+.metro-button:hover {
+    box-shadow: rgba(0,0,0,0.55) 0.125em 0.125em 0.375em;
+}
+
+.metro-button p {
+	display: inline-block;
+	line-height: 2.75rem;
+	width: auto;
+	position: relative;
+	top: 0;
+
+	color: white;
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-right: 0.5em;
+
+}
+
+.circle {
+	background-color: white;
+	width: 2.75rem;
+	height: 2.75em;
+	border-radius: 100%;
+	display: inline-block;
+}
+
+.blog {
+	background-color: #FE7087;
+	margin-bottom: 1.25em;
+}
+
+.blog:hover {
+    background-color: #FF536F;
+}
+
+.twitter {
+	background-color: #1EA1F3;
+}
+
+.twitter:hover {
+    background-color: #0086DA;
+}
+
+
+
+
+@media (max-width: 1439px) {
+
+	#logo {
+		height: 4em;
+		margin-right: 0.45em;
+	}
+	.tagline {
+		font-size: 1.125em;
+
+	}
+
+}
+
+@media (max-width: 767px) {
+
+    #duck {
+        max-width: 100vw;
+        /*height: auto;*/
+    }
+
+	.copyright {
+		font-size: 0.75em;
+	}
+
+	.metro-button {
+		height: 1.75em;
+		border-radius: 0 2em 2em 0;
+		padding: 0.375em;
+	}
+	.metro-button p {
+		line-height: 1.75rem;
+
+		font-size: 1.125em;
+		font-weight: 700;
+		margin-right: 0.5em;
+
+	}
+
+	.circle {
+		width: 1.75em;
+		height: 1.75em;
+	}
+
+	.blog {
+		margin-bottom: 1em;
+	}
+
+}
+
+@media (max-width: 356px) {
+
+    #logo {
+        height: 3.125em;
+        margin-right: 0.35em;
+    }
+    .tagline {
+        font-size: 0.875em;
+
+    }
+
+    .web-links {
+        bottom: 1.25em;
+    }
+
+    .metro-button {
+        height: 1.625em;
+        border-radius: 0 1.875em 1.875em 0;
+        padding: 0.25em;
+    }
+    .metro-button p {
+        line-height: 1.625rem;
+
+        font-size: 1em;
+        font-weight: 700;
+        margin-right: 0.5em;
+
+    }
+
+    .circle {
+        width: 1.625em;
+        height: 1.625em;
+    }
+
+    .blog {
+        margin-bottom: 0.625em;
+    }
+
+
+
+}
