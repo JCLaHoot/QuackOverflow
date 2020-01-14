@@ -101,8 +101,26 @@ body {
 #duck {
 	width: 30em;
 	height: auto;
-	filter: drop-shadow(0.25em 0.25em 0.3em rgba(0,0,0,0.25));
+	filter: drop-shadow(0.25em 0.25em 0.3em rgba(0,0,0,0.375));
+    transform: scale(1);
+    transition: transform 0.25s, filter 0.25s;
 }
+
+#duck:hover, #duck:focus {
+    cursor: grab;
+    filter: drop-shadow(0.5em 0.5em 0.75em rgba(0,0,0,0.25));
+    transform: scale(1.05);
+}
+
+#duck:focus {
+    outline: none;
+}
+
+#duck:active {
+    cursor: grabbing;
+    transform: scaleX(0.95);
+}
+
 
 .copyright {
 	font-family: 'Roboto',sans-serif;
@@ -129,10 +147,18 @@ body {
 	padding: 0.5em;
 	box-shadow: rgba(0,0,0,0.25) 0.125em 0.125em 0.25em;
     cursor: pointer;
+    text-decoration: none;
+    transition: padding-left 0.25s;
 }
 
 .metro-button:hover {
     box-shadow: rgba(0,0,0,0.55) 0.125em 0.125em 0.375em;
+}
+
+.metro-button:focus {
+    box-shadow: rgba(0,0,0,0.55) 0.125em 0.125em 0.375em;
+    padding-left: 1em;
+    outline: none;
 }
 
 .metro-button p {
@@ -162,7 +188,7 @@ body {
 	margin-bottom: 1.25em;
 }
 
-.blog:hover {
+.blog:hover, .blog:focus {
     background-color: #FF536F;
 }
 
@@ -170,7 +196,7 @@ body {
 	background-color: #1EA1F3;
 }
 
-.twitter:hover {
+.twitter:hover , .twitter:focus {
     background-color: #0086DA;
 }
 
