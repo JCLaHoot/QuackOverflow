@@ -176,6 +176,7 @@ body {
 	color: white;
 	font-size: 1.5em;
 	font-weight: 700;
+
 	margin-right: 0.5em;
 
 }
@@ -188,21 +189,23 @@ body {
 	display: inline-block;
 }
 
-.blog {
-	background-color: #FE7087;
+.bsky {
+	background-color: #1EA1F3;
 	margin-bottom: 1.25em;
 }
 
-.blog:hover, .blog:focus {
-    background-color: #FF536F;
-}
-
-.twitter {
-	background-color: #1EA1F3;
-}
-
-.twitter:hover , .twitter:focus {
+.bsky:hover, .bsky:focus {
     background-color: #0086DA;
+}
+
+.personal-site {
+	background-color: #D15CDA;
+
+}
+
+.personal-site:hover , .personal-site:focus {
+	background-color: #B747B1;
+
 }
 
 
@@ -241,7 +244,7 @@ body {
 		line-height: 1.75rem;
 
 		font-size: 1.125em;
-		font-weight: 700;
+		/* font-weight: 700; */
 		margin-right: 0.5em;
 
 	}
@@ -251,7 +254,7 @@ body {
 		height: 1.75em;
 	}
 
-	.blog {
+	.bsky {
 		margin-bottom: 1em;
 	}
 
@@ -281,7 +284,7 @@ body {
         line-height: 1.625rem;
 
         font-size: 1em;
-        font-weight: 700;
+        /* font-weight: 700; */
         margin-right: 0.5em;
 
     }
@@ -291,7 +294,7 @@ body {
         height: 1.625em;
     }
 
-    .blog {
+    .bsky {
         margin-bottom: 0.625em;
     }
 
